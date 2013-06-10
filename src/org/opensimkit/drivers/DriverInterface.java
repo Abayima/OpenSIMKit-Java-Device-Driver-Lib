@@ -20,13 +20,23 @@ public interface DriverInterface extends Plugin {
     // Command functionality
     
     public String runCommand(String command);
-    public String saveMessage(String contact, String message);
-    public String setMemoryToSIMMemory();
-    public String setToTextFormat();
+    public boolean saveMessage(String contact, String message);
+    public boolean setMemoryToSIMMemory();
+    public boolean setToTextFormat();
     public String getAllMessages();
     public String getMessageAt(int messageIndex);
     
     // Utilities
     
     public String getDelimiter();
+    public boolean isDeviceConnected();
+    
+    // Connection options
+    
+    public boolean isGenericConnection();
+    public boolean connectToDevice();
+    
+    // Serial port connections
+    
+    public boolean connectToSerialPort(int portIndex);
 }
