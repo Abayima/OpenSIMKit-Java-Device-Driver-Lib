@@ -20,6 +20,7 @@ public interface DriverInterface extends Plugin {
     // Command functionality
     
     public String runCommand(String command);
+    public boolean clearAllMessages();
     public boolean saveMessage(String contact, String message);
     public boolean setMemoryToSIMMemory();
     public boolean setToTextFormat();
@@ -36,6 +37,7 @@ public interface DriverInterface extends Plugin {
     
     public boolean isGenericConnection();
     public boolean connectToDevice();
+    public boolean disconnectDevice();
     
     // Serial port connections
     
