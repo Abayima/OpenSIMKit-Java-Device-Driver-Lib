@@ -24,6 +24,7 @@ public interface DriverInterface extends Plugin {
     public boolean setMemoryToSIMMemory();
     public boolean setToTextFormat();
     public String getAllMessages();
+    public String getPortName();
     public String getMessageAt(int messageIndex);
     
     // Utilities
